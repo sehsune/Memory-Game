@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80%;
+    border: 2px solid red;
+    margin: 10vh auto;
+    perspective: 1000px;
+
+
+}
+
+div {
+    height: 33.33%;
+    border: 2px solid white;
+    flex-basis: 15%;
+    flex-grow: 1;
+    background-size: cover;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+
+}
+
+@media (orientation:portrait) {
+
+    div {
+        flex-basis: 30%;
+        height: 16.66%;
+        background-size: cover;
+    }
+
+}
+
+
+.off-card {
+    background-color: gray;
+}
+
+
+.red {
+    background-image: url(cat_1.png);
+}
+
+.blue {
+    background-image: url(cat_2.jpg);
+}
+
+.green {
+    background-image: url(cat_3.png);
+}
+
+.yellow {
+    background-image: url(cat_4.jpg);
+}
+
+.pink {
+    background-image: url(cat_5.jpg);
+}
+
+.violet {
+    background-image: url(cat_7.jpg);
+}
+
+.cadetblue {
+    background-image: url(cat_8.jpg);
+}
+
+.brown {
+    background-image: url(cat_9.jpg);
+}
+
+.orange {
+    background-image: url(cat_6.jpg);
+}
+
+.hide-card {
+    background-color: black;
+    background-image: url(./question.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+
+}
+
+.off-card {
+    background-color: greenyellow;
+    background-image: none;
+}
+
+/* .flip-card{
+transform: rotateY(180deg);
+
+
+} */
